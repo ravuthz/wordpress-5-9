@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.Dockerfile
+
+# Commands to start on workspace startup
+tasks:
+  - init: php -version
+    command: php -S 0.0.0.0:8000
+# Ports to expose on workspace startup
+ports:
+  - port: 8000
+    onOpen: open-browser
