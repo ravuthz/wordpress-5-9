@@ -5,7 +5,7 @@ FROM gitpod/workspace-mysql
 
 ```bash
 mysql -e "show databases;"
-mysql -e "CREATE DATABASE wordpress;"
+mysql -e "CREATE DATABASE IF NOT EXISTS wordpress;"
 mysql -e "CREATE USER wordpress@localhost IDENTIFIED BY 'wordpress';"
 mysql -e "GRANT ALL PRIVILEGES ON *.* TO wordpress@localhost;"
 mysql -e "FLUSH PRIVILEGES;"

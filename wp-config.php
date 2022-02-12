@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'wordpress' );
 
 /** Database username */
-define( 'DB_USER', 'wordpress' );
+define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'wordpress' );
+define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
@@ -82,7 +82,10 @@ $table_prefix = 'wp_';
 define( 'WP_DEBUG', true );
 
 /* Add any custom values between this line and the "stop editing" line. */
-
+// define( 'WP_HOME', '' );
+define( 'WP_SITEURL', 'https://8000-ravuthz-wordpress59-qw0aw0oigi9.ws-us31.gitpod.io/' );
+define( 'FORCE_SSL_ADMIN', true );
+$_SERVER['HTTPS']='on';
 
 
 /* That's all, stop editing! Happy publishing. */

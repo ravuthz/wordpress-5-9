@@ -4,7 +4,9 @@ image:
 # Commands to start on workspace startup
 tasks:
   - init: php -version
-    command: php -S 0.0.0.0:8000
+    command: |
+      mysql -e "CREATE DATABASE IF NOT EXISTS wordpress;" 
+      php -S 0.0.0.0:8000
 # Ports to expose on workspace startup
 ports:
   - port: 8000
